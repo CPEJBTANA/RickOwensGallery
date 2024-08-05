@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1 id="headerchange">JavaScript Comparison</h1>
+    <h2>The () ? : Ternary Operator</h2>
+
+    <p id="Change">
+      Input your number of kids and click the button if you are eligable to get
+      money women
+    </p>
+
+    <input id="kids" type="text" />
+    <button onclick="thefunc()">CLICK THIS</button>
+    <button id="Hchance">CLICK THIS TO CHANGE HEADER</button>
+
+    <p id="result">THE RESULT WHILL SHOW HERE</p>
+
+    <script>
+      document.getElementById("Hchance").addEventListener("click", function () {
+        alert("You clicked the button");
+      });
+      document
+        .getElementById("Hchance")
+        .addEventListener("mouseover", function () {
+          alert("YOU HOVERED");
+        });
+
+      function thefunc() {
+        let numK = document.getElementById("kids").value;
+        let result =
+          numK < 5
+            ? "You are eligable for money"
+            : "You are not eligable for money";
+        document.getElementById("result").innerHTML = result;
+      }
+    </script>
+  </body>
+</html>
